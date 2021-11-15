@@ -111,3 +111,33 @@ export const Total = styled.div`
     margin-left: 5px;
   }
 `;
+
+export const Button = styled.button`
+  background: #7159c1;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  padding: 12px 20px;
+  font-weight: bold;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background 0.2s;
+  &:hover {
+    background: ${darken(0.06, '#7159c1')};
+  }
+`;
+
+export const EmptyCart = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  svg {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  h2 {
+    color: #333;
+    margin-bottom: 30px;
+  }
+`;
